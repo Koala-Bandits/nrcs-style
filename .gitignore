@@ -1,4 +1,10 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+.sass-cache
+.DS_Store
+node_modules
+dist
+npm-debug.log
+.ugly
+.bundle/
+published
+.vscode
+yarn-error\.log
