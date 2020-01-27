@@ -19,7 +19,7 @@ In no way are the patent or trademark rights of any person affected by CC0, nor 
 
 Unless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law. When using or citing the work, you should not imply endorsement by the author or the affirmer.
 
-### This project is basedo on (http://usda-fsa.github.io/fsa-style/) which identifies parts parts of this project which are not in the public domain
+### Based on (http://usda-fsa.github.io/fsa-style/) which identifies parts parts of this project which are not in the public domain
 
 The Source Sans Pro font files in `assets/fonts` are a customized subset of [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro), licensed under the [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?item_id=OFL), and copyright [Adobe Systems Incorporated](http://www.adobe.com), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
 
