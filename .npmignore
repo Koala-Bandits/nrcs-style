@@ -1,0 +1,12 @@
+# Guarantee these are added
+!dist/
+!src/
+
+# Ignore these
+.github/
+.editorconfig
+.eslintrc
+published
+.vscode
+yarn.lock
+yarn-error.log

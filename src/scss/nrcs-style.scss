@@ -1,0 +1,85 @@
+////////////////////////////////////////////////////////////////////////////////
+// nrcs-style.scss
+// Essentially a copy of /lib/fsa-style/fsa-style.scss, modified to use our 
+// _nrcs.variables.scss plus some additions like fonts, icons, blockgrid etc.
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+// USWDS - Start off with a select set of imports from USWDS ///////////////////
+@import 'lib/fsa-style/uswds-select';
+@import 'lib/fsa-style/core/DEVELOPMENT'; // optional
+
+////////////////////////////////////////////////////////////////////////////////
+// NRCS - Custom ///////////////////////////////////////////////////////////////
+
+@import 'core/nrcs.variables';
+
+////////////////////////////////////////////////////////////////////////////////
+// FSA          ////////////////////////////////////////////////////////////////
+
+// Core -------------- /////////////////////////////////////////////////////////
+
+@import 'lib/fsa-style/core/fsa.font';
+@import 'lib/fsa-style/core/fsa.utilities';
+@import 'lib/fsa-style/core/fsa.base';
+@import 'lib/fsa-style/core/fsa.grid';
+
+// Elements -------------- /////////////////////////////////////////////////////
+
+@import 'lib/fsa-style/elements/fsa.skipnav';
+@import 'lib/fsa-style/elements/fsa.typography';
+@import 'lib/fsa-style/elements/fsa.list';
+@import 'lib/fsa-style/elements/fsa.buttons';
+@import 'lib/fsa-style/elements/fsa.figure';
+@import 'lib/fsa-style/elements/fsa.form-elements.textfields';
+@import 'lib/fsa-style/elements/fsa.form-elements.checkbox-radio';
+@import 'lib/fsa-style/elements/fsa.form-elements.switch';
+@import 'lib/fsa-style/elements/fsa.form-elements.select';
+
+@import 'lib/fsa-style/elements/fsa.table';
+@import 'lib/fsa-style/elements/fsa.label';
+@import 'lib/fsa-style/elements/fsa.badge';
+
+// Components -------------- ///////////////////////////////////////////////////
+
+@import 'lib/fsa-style/components/fsa.search';
+@import 'lib/fsa-style/components/fsa.box';
+@import 'lib/fsa-style/components/fsa.disclaimer';
+@import 'lib/fsa-style/components/fsa.tophat';
+@import 'lib/fsa-style/components/fsa.header-app';
+@import 'lib/fsa-style/components/fsa.nav-global';
+@import 'lib/fsa-style/components/fsa.content-tabs';
+@import 'lib/fsa-style/components/fsa.modal';
+@import 'lib/fsa-style/components/fsa.alerts';
+@import 'lib/fsa-style/components/fsa.btn-group';
+@import 'lib/fsa-style/components/fsa.growl';
+@import 'lib/fsa-style/components/fsa.breadcrumb';
+@import 'lib/fsa-style/components/fsa.media-object';
+@import 'lib/fsa-style/components/fsa.forms';
+@import 'lib/fsa-style/components/fsa.forms.field';
+@import 'lib/fsa-style/components/fsa.date-picker';
+@import 'lib/fsa-style/components/fsa.footer-nav';
+@import 'lib/fsa-style/components/fsa.footer';
+@import 'lib/fsa-style/components/fsa.screen-id';
+@import 'lib/fsa-style/components/fsa.topper';
+@import 'lib/fsa-style/components/fsa.whiteout';
+@import 'lib/fsa-style/components/fsa.select-multi';
+@import 'lib/fsa-style/components/fsa.stepped-tabs';
+@import 'lib/fsa-style/components/fsa.stepped-control';
+@import 'lib/fsa-style/components/fsa.pagination';
+@import 'lib/fsa-style/components/fsa.spinbox';
+@import 'lib/fsa-style/components/fsa.progress';
+@import 'lib/fsa-style/components/fsa.splash';
+@import 'lib/fsa-style/components/fsa.timeline';
+
+// Layout-------------- ////////////////////////////////////////////////////////
+
+@import 'lib/fsa-style/layout/fsa.section';
+
+// Other -------------- ////////////////////////////////////////////////////////
+
+@import 'lib/fsa-style/elements/fsa.css-utilities';
+
+// fin /////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
