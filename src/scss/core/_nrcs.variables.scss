@@ -7,7 +7,7 @@
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
-// NEW variables specific to FSA
+// NEW variables specific to NRCS
 // or OVERRIDES those set in USWDS-provided `_defaults.scss`
 
 // ---------------------------------------------------------------------------
@@ -26,13 +26,20 @@ $site-max-width: 1200px;
 // Colors
 
 // Core Colors
-$color-fsa-primary: shade($color-green, 25%); // from USWDS
-$color-fsa-primary-300: tint($color-fsa-primary, 19%);
-$color-fsa-primary-200: tint($color-fsa-primary, 65%);
-$color-fsa-primary-100: tint($color-fsa-primary, 85%);
-$color-fsa-primary-900: shade($color-fsa-primary, 25%);
+// $color-fsa-primary: shade($color-green, 25%); // from USWDS
+// $color-fsa-primary-300: tint($color-fsa-primary, 19%);
+// $color-fsa-primary-200: tint($color-fsa-primary, 65%);
+// $color-fsa-primary-100: tint($color-fsa-primary, 85%);
+// $color-fsa-primary-900: shade($color-fsa-primary, 25%);
 
+$color-fsa-primary: $color-primary-darker; // from USWDS
 $color-fsa-secondary: $color-primary-darker; // from USWDS
+
+$color-fsa-primary-300: tint($color-fsa-secondary, 21%);
+$color-fsa-primary-200: tint($color-fsa-secondary, 70%);
+$color-fsa-primary-100: tint($color-fsa-secondary, 85%);
+$color-fsa-primary-900: shade($color-fsa-secondary, 25%);
+
 $color-fsa-secondary-300: tint($color-fsa-secondary, 21%);
 $color-fsa-secondary-200: tint($color-fsa-secondary, 70%);
 $color-fsa-secondary-100: tint($color-fsa-secondary, 85%);
@@ -79,7 +86,7 @@ $color-fsa-selection-bg: $color-fsa-secondary-100;
 
 // Semantic
 $color-title: $color-fsa-tertiary;
-$color-fsa-site-bg: tint($color-fsa-secondary, 97%); // Super light gray bg, but with a slight tint of blue
+$color-fsa-site-bg: #fafafa; //tint($color-fsa-secondary, 97%); // Super light gray bg, but with a slight tint of blue
 
 $marker-text-color: $color-base;
 
@@ -109,7 +116,7 @@ $h1-font-size: $font-size-6;
 $lead-font-size: ($font-size-5 - .3rem);
 $lead-line-height: 1.3;
 
-$font-sans:  'Source Sans Pro', $helvetica;
+$font-sans:  'Roboto', 'Source Sans Pro', $helvetica;
 $font-serif: $font-sans;
 $font-mono:  "Bitstream Vera Sans Mono", "Consolas", "Menlo", "Monaco", "Courier New", "Courier", monospace;
 

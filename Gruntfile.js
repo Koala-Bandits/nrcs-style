@@ -23,7 +23,7 @@ module.exports = function (grunt) {
       default: {
         files: {
           'dist/css/<%= pkg.name %>.css': 'src/scss/<%= pkg.name %>.scss',
-          'dist/css/fsa-style-docs.css': 'src/scss/lib/fsa-style/fsa-style-docs.scss'
+          'dist/css/<%= pkg.name %>-docs.css': 'src/scss/<%= pkg.name %>-docs.scss'
         },
         options: {
           sourceMap: true,
@@ -33,7 +33,7 @@ module.exports = function (grunt) {
       minify: {
         files: {
           'dist/css/<%= pkg.name %>.min.css': 'src/scss/<%= pkg.name %>.scss',
-          'dist/css/fsa-style-docs.min.css': 'src/scss/lib/fsa-style/fsa-style-docs.scss'
+          'dist/css/<%= pkg.name %>-docs.min.css': 'src/scss/<%= pkg.name %>-docs.scss'
         },
         options: {
           sourceMap: true,
@@ -70,12 +70,12 @@ module.exports = function (grunt) {
       //   dest: 'src/stylesheets/lib/uswds'
       // },
 
-      fsa_fonts: {
-        expand: true,
-        src: '**',
-        cwd: 'node_modules/fsa-style/src/fonts',
-        dest: 'src/fonts'
-      },
+      // fsa_fonts: {
+      //   expand: true,
+      //   src: '**',
+      //   cwd: 'node_modules/fsa-style/src/fonts',
+      //   dest: 'src/fonts'
+      // },
 
       fsa_img: {
         expand: true,
@@ -325,7 +325,7 @@ module.exports = function (grunt) {
     'copy:fsa_stylesheets',
     'copy:datepicker_bk',
     // 'copy:uswds_stylesheets',
-    'copy:fsa_fonts',
+    // 'copy:fsa_fonts',
     'copy:fsa_img',
     'copy:fsa_js',
     'copy:fonts',
