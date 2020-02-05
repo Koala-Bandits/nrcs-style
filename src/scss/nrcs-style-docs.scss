@@ -847,6 +847,23 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
   background-color: $color-fsa-aqua-100;
 }
 
+// NRCS success green
+.color-fsa-green-dark {
+  background-color: $color-fsa-green-900;
+}
+.color-fsa-green {
+  background-color: $color-fsa-green;
+}
+.color-fsa-green-light {
+  background-color: $color-fsa-green-300;
+}
+.color-fsa-green-lighter {
+  background-color: $color-fsa-green-200;
+}
+.color-fsa-green-lightest {
+  background-color: $color-fsa-green-100;
+}
+
 .color-fsa-red-dark {
   background-color: $color-fsa-red-900;
 }

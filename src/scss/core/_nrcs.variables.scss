@@ -7,7 +7,7 @@
 
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
-// NEW variables specific to NRCS
+// NEW variables specific to FSA
 // or OVERRIDES those set in USWDS-provided `_defaults.scss`
 
 // ---------------------------------------------------------------------------
@@ -51,18 +51,44 @@ $color-fsa-tertiary-200: tint($color-fsa-tertiary, 80%);
 $color-fsa-tertiary-100: tint($color-fsa-tertiary, 92%);
 $color-fsa-tertiary-900: shade($color-fsa-tertiary, 35%);
 
-// Accent Colors
-$color-fsa-aqua: $color-primary-alt-dark; // from USWDS
-$color-fsa-aqua-300: $color-primary-alt;
-$color-fsa-aqua-200: $color-primary-alt-light;
-$color-fsa-aqua-100: $color-primary-alt-lightest;
-$color-fsa-aqua-900: $color-primary-alt-darkest;
+// $color-fsa-tertiary: #444; // NRCS
+// $color-fsa-tertiary-300: #777; // NRCS
+// $color-fsa-tertiary-200: #DDD; // NRCS
+// $color-fsa-tertiary-100: #ECECEC; // NRCS
+// $color-fsa-tertiary-900: #222; // NRCS
 
-$color-fsa-red: $color-secondary-dark; // from USWDS
-$color-fsa-red-300: tint($color-secondary-dark, 40%);
-$color-fsa-red-200: tint($color-secondary-dark, 70%);
-$color-fsa-red-100: tint($color-secondary-dark, 88%);
-$color-fsa-red-900: $color-secondary-darkest;
+// Accent Colors
+$color-fsa-aqua: #2e8fda; // from NRCS
+$color-fsa-aqua-300: tint($color-fsa-aqua, 21%);
+$color-fsa-aqua-200: tint($color-fsa-aqua, 70%);
+$color-fsa-aqua-100: tint($color-fsa-aqua, 85%);
+$color-fsa-aqua-900: tint($color-fsa-aqua, 25%);
+
+// $color-fsa-aqua: $color-primary-alt-dark; // from USWDS
+// $color-fsa-aqua-300: $color-primary-alt;
+// $color-fsa-aqua-200: $color-primary-alt-light;
+// $color-fsa-aqua-100: $color-primary-alt-lightest;
+// $color-fsa-aqua-900: $color-primary-alt-darkest;
+
+$color-nrcs-success: #72BB52;
+$color-fsa-green: $color-nrcs-success; // from NRCS
+$color-fsa-green-300: tint($color-nrcs-success, 21%);
+$color-fsa-green-200: tint($color-nrcs-success, 70%);
+$color-fsa-green-100: tint($color-nrcs-success, 85%);
+$color-fsa-green-900: tint($color-nrcs-success, 25%);
+
+// $color-fsa-red: $color-secondary-dark; // from USWDS
+// $color-fsa-red-300: tint($color-secondary-dark, 40%);
+// $color-fsa-red-200: tint($color-secondary-dark, 70%);
+// $color-fsa-red-100: tint($color-secondary-dark, 88%);
+// $color-fsa-red-900: $color-secondary-darkest;
+
+$color-nrcs-error: #B70F0A;
+$color-fsa-red: $color-nrcs-error; // from NRCS
+$color-fsa-red-300: tint($color-nrcs-error, 40%);
+$color-fsa-red-200: tint($color-nrcs-error, 70%);
+$color-fsa-red-100: tint($color-nrcs-error, 88%);
+$color-fsa-red-900: $color-nrcs-error;
 
 $color-fsa-yellow: $color-gold; // from USWDS
 $color-fsa-yellow-300: $color-gold-light;
@@ -95,7 +121,7 @@ $marker-bgc-neutral: $color-fsa-white;
 $marker-bgc-general: $color-fsa-secondary-200;
 $marker-bgc-alert: $color-fsa-red-200;
 $marker-bgc-warning: $color-fsa-yellow-200;
-$marker-bgc-success: $color-fsa-primary-200;
+$marker-bgc-success: $color-fsa-green-200;
 
 // ---------------------------------------------------------------------------
 // Typography
@@ -111,12 +137,37 @@ $font-size-5 : $h2-font-size;           // 30px
 $font-size-6 : ($h1-font-size + .2rem); // 42px
 $font-size-7 : $title-font-size;        // 52px
 
+// core USWDS
+// $base-font-size:      1.7rem !default;
+// $small-font-size:     1.4rem !default;
+// $lead-font-size:      2rem !default;
+// $title-font-size:     5.2rem !default;
+// $h1-font-size:        4rem !default;
+// $h2-font-size:        3rem !default;
+// $h3-font-size:        2rem !default;
+// $h4-font-size:        1.7rem !default;
+// $h5-font-size:        1.5rem !default;
+// $h6-font-size:        1.3rem !default;
+// $base-line-height:    1.5 !default;
+// $heading-line-height: 1.3 !default;
+// $lead-line-height:    1.7 !default;
+
+// FSA -> NRCS
+// $font-size-0 : 1.2rem;          // 12px
+// $font-size-1 : 1.3rem;        // 13px
+// $font-size-2 : 1.5rem;           // 15px
+// $font-size-3 : 1.6rem;         // 16px BASE
+// $font-size-4 : 1.8rem;           // 18px H3
+// $font-size-5 : 2.2rem;           // 22px
+// $font-size-6 : 3.2rem; // 32px
+// $font-size-7 : 4.2rem;        // 42px
+
 $h1-font-size: $font-size-6;
 
 $lead-font-size: ($font-size-5 - .3rem);
 $lead-line-height: 1.3;
 
-$font-sans:  'Roboto', 'Source Sans Pro', $helvetica;
+$font-sans:  'Roboto', $helvetica; // 'Source Sans Pro'
 $font-serif: $font-sans;
 $font-mono:  "Bitstream Vera Sans Mono", "Consolas", "Menlo", "Monaco", "Courier New", "Courier", monospace;
 

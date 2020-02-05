@@ -20,8 +20,7 @@
 
 // Core -------------- /////////////////////////////////////////////////////////
 
-@import 'lib/fsa-style/core/fsa.font';
-
+//@import 'lib/fsa-style/core/fsa.font';
 @import 'core/nrcs.font.scss';
 
 @import 'lib/fsa-style/core/fsa.utilities';
@@ -54,9 +53,11 @@
 @import 'lib/fsa-style/components/fsa.nav-global';
 @import 'lib/fsa-style/components/fsa.content-tabs';
 @import 'lib/fsa-style/components/fsa.modal';
-@import 'lib/fsa-style/components/fsa.alerts';
+//@import 'lib/fsa-style/components/fsa.alerts';
+@import 'components/nrcs.alerts';
 @import 'lib/fsa-style/components/fsa.btn-group';
-@import 'lib/fsa-style/components/fsa.growl';
+// @import 'lib/fsa-style/components/fsa.growl';
+@import 'components/nrcs.growl';
 @import 'lib/fsa-style/components/fsa.breadcrumb';
 @import 'lib/fsa-style/components/fsa.media-object';
 @import 'lib/fsa-style/components/fsa.forms';
@@ -83,6 +84,9 @@
 // Other -------------- ////////////////////////////////////////////////////////
 
 @import 'lib/fsa-style/elements/fsa.css-utilities';
+
+// NRCS Overrides ----- ////////////////////////////////////////////////////////
+
 
 // fin /////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
